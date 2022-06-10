@@ -1,0 +1,6 @@
+.ccls-cache/
+*.o
+.cache/
+buildtree/
+
+*.exe
