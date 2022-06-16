@@ -1,5 +1,5 @@
 #include "greeting.h"
-int main_1(void)
+int main(void)
 {
     greeting();
     return 0;

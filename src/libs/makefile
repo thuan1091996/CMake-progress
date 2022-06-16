@@ -7,6 +7,7 @@ run.exe: test_shared_lib.c greeting.o
 libgreeting.so: greeting.c
 	gcc -fPIC -shared -o $@ $^ 
 
+all: run.exe libgreeting.so
 
 
 clean: 
