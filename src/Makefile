@@ -2,15 +2,17 @@
 # Ref: https://makefiletutorial.com/#flavors-and-modification
 # Toolchain variables
 LIBS_DIR = libs
+INCLUDE_DIR = inc
 SRCS_DIR = . src_files
+
 CC=gcc
-CFLAGS = -I include -Wall# -Werror # -g
+CFLAGS = -I ${INCLUDE_DIR} -Wall# -Werror # -g
 CFLAGS_MARCO = ${CFLAGS} -DITACHI=7 main.c	#Expand variables & passing pre-processor to main.c -D(Define)
 LDFLAGS= ${LIBS_DIR}/*.so
 ######################################################################
 # VPATH = include src # dependencies find in /include first will ignore from /src
 # vpah -- patern -- dir list
-vpath %.h ./include
+vpath %.h ./$(INCLUDE_DIR)
 vpath %.c ${SRCS_DIR}
 
 ######################################################################

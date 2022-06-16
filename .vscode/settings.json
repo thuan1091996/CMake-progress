@@ -1,0 +1,11 @@
+{
+    "cmake.buildDirectory": "${workspaceFolder}/buildtree",
+    "cmake.sourceDirectory": "${workspaceFolder}/src",
+    "cmake.cmakePath": "/home/thuantm/.local/bin/cmake",
+    "cmake.generator": "Unix Makefiles",
+    "cmake.loggingLevel": "debug",
+    "C_Cpp.experimentalFeatures": "Enabled",
+    "C_Cpp.loggingLevel": "Warning",
+    "C_Cpp.vcFormat.indent.braces": true,
+    "clangd.checkUpdates": true
+}
