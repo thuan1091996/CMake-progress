@@ -1,38 +1,27 @@
 .
-├── buildtree
-│   ├── CMakeCache.txt
-│   ├── CMakeFiles
-│   │   ├── 3.22.4
-│   │   ├── cmake.check_cache
-│   │   ├── CMakeDirectoryInformation.cmake
-│   │   ├── CMakeOutput.log
-│   │   ├── CMakeTmp
-│   │   ├── libs_share.dir
-│   │   ├── Makefile2
-│   │   ├── Makefile.cmake
-│   │   ├── Progress
-│   │   ├── progress.marks
-│   │   └── TargetDirectories.txt
-│   ├── cmake_install.cmake
-│   └── Makefile
-├── CMakeLists.txt
+├── CMakePresets.json
 ├── dir.txt
+├── README.md
 ├── script_cmake.sh
 └── src
-    ├── CMakeLists.txt
     ├── dir.txt
-    ├── include
+    ├── inc
     │   ├── extralib.h
     │   └── findme_1.h
     ├── libs
-    │   ├── greeting.h
-    │   ├── libgreeting.so
+    │   ├── buildtree
+    │   ├── inc_lib
+    │   ├── libs_dir.txt
     │   ├── makefile
-    │   └── test_lib
-    ├── main.c
+    │   ├── script_cmake.sh
+    │   └── src_lib
     ├── Makefile
+    ├── remake_help.txt
+    ├── script_cmake.sh
     └── src_files
+        ├── CMakeLists.txt
         ├── findme_1.c
+        ├── main.c
         └── really.c
 
-11 directories, 24 files
+7 directories, 17 files

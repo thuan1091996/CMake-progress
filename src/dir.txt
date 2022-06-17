@@ -1,0 +1,27 @@
+.
+├── CMakeLists.txt
+├── dir.txt
+├── inc
+│   ├── extralib.h
+│   └── findme_1.h
+├── libs
+│   ├── CMakeLists.txt
+│   ├── greeting.h
+│   ├── libgreeting.a
+│   ├── libs_dir.txt
+│   ├── makefile
+│   ├── script_cmake.sh
+│   └── src_lib
+│       ├── CMakeLists.txt
+│       ├── greeting.c
+│       ├── greeting.h
+│       └── test_shared_lib.c
+├── main.c
+├── Makefile
+├── nohup.out
+├── remake_help.txt
+└── src_files
+    ├── findme_1.c
+    └── really.c
+
+4 directories, 20 files

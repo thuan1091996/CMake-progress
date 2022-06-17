@@ -45,3 +45,11 @@ message(STATUS "Including directory: ${PROJECT_DIR}/inc_lib")
 
 target_link_libraries(Main_Executable PUBLIC greeting_lib)
 message(STATUS "Building: ${CMAKE_CURRENT_LIST_FILE}")
+
+
+# target_link_libraries(Main_Executable libgreeting libs)
+
+# Includes
+
+# add_executable(libs_share main.c) add_library(share_lib SHARED really.c
+# findme_1.c)

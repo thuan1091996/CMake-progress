@@ -1,14 +1,16 @@
 ######################################################################
 # Ref: https://makefiletutorial.com/#flavors-and-modification
 # Toolchain variables
-LIBS_DIR = libs
-INCLUDE_DIR = inc
+LIBS_DIR = libs/buildtree
+INCLUDE_DIR = libs/inc_lib inc
 SRCS_DIR = . src_files
 
 CC=gcc
-CFLAGS = -I ${INCLUDE_DIR} -Wall# -Werror # -g
-CFLAGS_MARCO = ${CFLAGS} -DITACHI=7 main.c	#Expand variables & passing pre-processor to main.c -D(Define)
-LDFLAGS= ${LIBS_DIR}/*.so
+CFLAGS := $(foreach inc_dir, $(INCLUDE_DIR), -I$(inc_dir))#-I ${INCLUDE_DIR} 
+CFLAGS := $(CFLAGS) -Wall# -Werror # -g
+
+CFLAGS_MARCO = ${CFLAGS} -DITACHI=7 src_files/main.c	#Expand variables & passing pre-processor to main.c -D(Define)
+LDFLAGS= ${LIBS_DIR}/*.a
 ######################################################################
 # VPATH = include src # dependencies find in /include first will ignore from /src
 # vpah -- patern -- dir list

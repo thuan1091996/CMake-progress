@@ -1,6 +1,7 @@
 #include "findme_1.h"
 #include "stdio.h"
-#include "libs/greeting.h"
+#include <greeting.h>
+#define ITACHI 7
 int main() {
   printf("Hello there!!! \n");
   printf("Imported marco %d \n", ITACHI);
